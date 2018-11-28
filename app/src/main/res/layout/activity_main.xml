@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Title"
+        android:text="记事本"
+        android:gravity="center"
+        android:background="#4169E1"
+        android:textSize="35dp"
+        />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/id_autotextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:gravity="left"
+        android:hint="输入笔记名字"
+        android:textSize="20dp"
+        />
+    <ListView
+        android:id="@+id/notelist"
+        android:layout_width="match_parent"
+        android:choiceMode="multipleChoiceModal"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:id="@+id/addNote"
+            android:text="点击添加新笔记"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
